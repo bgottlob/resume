@@ -631,6 +631,19 @@
   \honordatestyle{#3} & \honorpositionstyle{#1}, \honortitlestyle{#2} \\
 }
 
+% modified from cvitems
+\newenvironment{cvcourses}{%
+  \vspace{-2.0mm}
+  \begin{justify}
+  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{%
+  \end{itemize}
+  \end{justify}
+  \vspace{1.0mm}
+}
+
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
