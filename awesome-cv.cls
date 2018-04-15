@@ -527,6 +527,10 @@
   \fancyfoot[C]{\footerstyle{#2}}
   \fancyfoot[R]{\footerstyle{#3}}
 }
+\newcommand*{\makecvfooterdateonly}[1]{%
+  \fancyfoot{}
+  \fancyfoot[L]{\footerstyle{#1}}
+}
 
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
